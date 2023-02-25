@@ -1,0 +1,337 @@
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.container {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.trench-container {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(15, 15, 15);
+}
+
+header {
+  height: 110px;
+  text-align: center;
+}
+
+.logo img {
+  height: 90px;
+  position: absolute;
+  top: 4%;
+  left: 6%;
+}
+
+.logo img:hover {
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+nav {
+  text-align: right;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+nav a {
+  color: white;
+  font-size: 18px;
+  font-family: "DM Mono", sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: rgba(223, 223, 4, 0.789) !important;
+  transition: 0.2s;
+}
+
+main {
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+#landing-text {
+  height: 200px;
+}
+
+.landing-text h1 {
+  color: rgba(252, 249, 249, 0.889);
+  font-size: 70px;
+  font-family: "DM Mono", sans-serif;
+  margin-bottom: 0px;
+  padding-top: 25%;
+}
+
+.landing-text p {
+  font-size: 20px;
+  color: rgba(252, 249, 249, 0.889);
+  font-family: "DM Mono", sans-serif;
+  margin-top: 2px;
+}
+
+.guide-text h1 {
+    color: rgba(223, 223, 4, 0.789);
+    font-size: 40px;
+    font-family: "DM Mono", sans-serif;
+    text-align: center;
+}
+
+.guide-text h2 {
+  color: white;
+  font-size: 25px;
+  font-family: "DM Mono", sans-serif;
+  margin-bottom: 8px;
+  padding-top: 0;
+}
+
+.guide-text p {
+  font-size: 18px;
+  color: rgba(252, 249, 249, 0.889);
+  font-family: "DM Mono", sans-serif;
+  margin-top: 2px;
+}
+
+.guide-text em {
+  font-style: normal;
+  color: rgba(223, 223, 4, 0.789);
+}
+
+.guide-text .right-img img{
+    width: 500px;
+    margin-left: 20px;
+    margin-top: 0;
+}
+
+.guide-text .left-img img{
+    width: 400px;
+    margin-right: 20px;
+    margin-top: 0;
+}
+
+.next-page button {
+    border: 2px solid white;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    margin-left: 75%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.next-page a {
+    color: white;
+    font-size: 15px;
+    font-family: "DM Mono", sans-serif;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.next-page button:hover {
+    border: 2px solid rgba(223, 223, 4, 0.789);
+    background-color: rgba(223, 223, 4, 0.789);
+    transition: 0.5s;
+  }
+
+#characters {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.character-box {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.single-character {
+  flex-basis: 48%;
+  text-align: center;
+  margin-bottom: 15px;
+  color: white;
+  position: relative;
+}
+
+.single-character img {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  cursor: pointer;
+  background: linear-gradient(rgba(0, 0, 0, 0.233), black);
+  opacity: 0;
+  transition: 1s;
+  position: absolute;
+}
+
+.single-character:hover .overlay {
+  opacity: 1;
+}
+
+.character-desc {
+  width: 80%;
+  position: absolute;
+  top: 10%;
+  bottom: 0;
+  left: 50%;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: 1s;
+}
+
+.character-desc h3 {
+  font-family: "DM Mono", sans-serif;
+}
+
+.character-desc p {
+  font-family: "DM Mono", sans-serif;
+  font-size: 14px;
+}
+
+.single-character:hover .character-desc {
+  opacity: 1;
+  bottom: 40%;
+}
+
+.trench-text i { 
+    font-style: normal;
+    font-size: 15px;
+    color: rgba(252, 249, 249, 0.645);
+    font-family: "DM Mono", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.trench-text h1 {
+    color: rgba(223, 223, 4, 0.789);
+    font-size: 40px;
+    font-family: "DM Mono", sans-serif;
+    text-align: center;
+}
+
+.trench-text h2 {
+  color: white;
+  font-size: 25px;
+  font-family: "DM Mono", sans-serif;
+  margin-bottom: 8px;
+  padding-top: 0;
+}
+
+.trench-text p {
+  font-size: 18px;
+  color: rgba(252, 249, 249, 0.889);
+  font-family: "DM Mono", sans-serif;
+  margin-top: 0;
+  margin-right: 20px;
+}
+
+.trench-text em {
+  font-style: normal;
+  color: rgba(223, 223, 4, 0.789);
+}
+
+.trench-text img {
+  width: 550px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+
+.trench-text .right-img img{
+    width: 250px;
+    margin-left: 20px;
+    margin-top: 0;
+}
+
+.trench-text .left-img img{
+    width: 400px;
+    margin-right: 20px;
+    margin-top: 0;
+}
+
+.trench-text a {
+  color: rgba(252, 249, 249, 0.889);
+}
+
+.trench-text a:hover {
+  color: rgba(223, 223, 4, 0.789);
+}
+
+.twitter-tweet {
+  padding-right: 30px;
+}
+
+.spotify-playlist iframe {
+    width: 100%;
+    height: 200px;
+}
+
+.youtube-videos iframe {
+    width: 600px;
+    height: 300px;
+    margin-left: 25%;
+}
+
+
+footer {
+  height: 60px;
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer button {
+  border: 2px solid white;
+  background-color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+footer a {
+  color: white;
+  font-size: 15px;
+  font-family: "DM Mono", sans-serif;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+footer button:hover {
+  border: 2px solid rgba(223, 223, 4, 0.789);
+  background-color: rgba(223, 223, 4, 0.789);
+  transition: 0.5s;
+}
+
+footer button a:hover {
+  color: black;
+}
